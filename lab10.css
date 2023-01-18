@@ -85,10 +85,13 @@ body{
 
 #hat{
     position: absolute;
+    display: block;
     width: 100px;
     height: 100px;
     bottom: 10px;
-    z-index: 1;
+    right: 10px;
+    z-index: 2;
+    opacity: 0.5;
 }
 
 #rabbit{
@@ -96,6 +99,64 @@ body{
     width: 60px;
     height: 60px;
     z-index: 1;
-    bottom: 135px;
-    right: 110px;
+    bottom: 35px;
+    right: 33px;
+    display: none;
+}
+
+#rabbit_new{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: block;
+    z-index: 2;
+    opacity: 0.5;
+    bottom: 35px;
+    right: 35px;
+    animation: ease 1s focus;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes focus{
+    0%{
+        transform: translateY(0%);
+    }
+
+    100%{
+        transform: translateY(-250%);
+    }
+}
+
+#pigeon{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 35px;
+    right: 33px;
+    z-index: 1;
+    display: none;
+}
+
+#pigeon_new{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 35px;
+    right: 33px;
+    z-index: 2;
+    opacity: 0.5;
+    animation: ease 1s pigeon_rev;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pigeon_rev{
+    0%{
+        transform: translateY(0%);
+    }
+
+    100%{
+        transform: translateY(-250%);
+    }
 }

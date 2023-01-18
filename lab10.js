@@ -15,3 +15,13 @@ function on(){
         document.getElementById('foc').style.display = 'none';
     }
 }
+
+function focusing(){
+    document.getElementById('rabbit').id = 'rabbit_new';
+    document.getElementById('pigeon_new').id = 'pigeon';
+}
+
+function pigeon(){
+    document.getElementById('pigeon').id = 'pigeon_new';
+    document.getElementById('rabbit_new').id = 'rabbit';
+}
